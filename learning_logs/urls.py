@@ -4,6 +4,6 @@ app_name = 'learning_logs'
 urlpatterns = [
     #主页
     path(r'', views.index, name='index'),
-    path(r'^topics/$', views.topics, name='topics'),
-    path(r'^topics/(?P<topic_id>\d+)/$', views.topics, name='topic')
+    path('topics/', views.topics, name='topics'),
+    path('topics/<int:topic_id>/', views.topic, name='topic')
 ]
