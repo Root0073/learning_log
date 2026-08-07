@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.utils.html import re
 from django.http import HttpResponseRedirect
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from .forms import TopicForm
 from .models import Topic
 
